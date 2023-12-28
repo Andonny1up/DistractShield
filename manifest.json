@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "DistractShield",
+  "version": "1.0",
+  "description": "Esta extensión bloquea sitios web distractivos para ayudarte a concentrarte en tu trabajo.",
+  "author": "AbjPlayer",
+  "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": "DistractShield-icon.png",
+    "default_title": "DistractShield",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "icons": {
+    "16": "DistractShield-icon.png",
+    "48": "DistractShield-icon.png",
+    "128": "DistractShield-icon.png"
+  }
+}
