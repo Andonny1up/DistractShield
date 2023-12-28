@@ -1,6 +1,7 @@
 :root{
     --ds-color-white: #fff;
     --ds-color-gray: #333333;
+    --ds-color-light-gray: #e6e6e6;
     --ds-color-primary: #007bff;
 }
 *{
@@ -20,6 +21,11 @@ body{
     box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,.1);
     position: relative;
     z-index: 1000;
+}
+.ds-header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .ds-h1{
     color:var(--ds-color-gray);
@@ -42,4 +48,52 @@ body{
     border-radius: 0.2rem;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+}
+.ds-btn-mini-primary{
+    background-color: var(--ds-color-primary);
+    color: var(--ds-color-white);
+    border: 0.125rem solid var(--ds-color-primary);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.domain-container{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#view-domain{
+    background-color: var(--ds-color-light-gray);
+    border: 0.1rem solid var(--ds-color-gray);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.2rem;
+}
+.ds-button-success{
+    background-color: #28a745;
+    color: var(--ds-color-white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.ds-button-danger{
+    background-color: #dc3545;
+    color: var(--ds-color-white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.select-time{
+    /* estilos para un select bonito */
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 2.5rem;
+    margin-top: 1rem;
+}
+.select-time option{
+    text-align: center;
 }

@@ -4,7 +4,7 @@
   "version": "1.0",
   "description": "Esta extensión bloquea sitios web distractivos para ayudarte a concentrarte en tu trabajo.",
   "author": "AbjPlayer",
-  "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
+  "permissions": ["tabs", "storage","webRequest", "webRequestBlocking", "<all_urls>"],
   "background": {
     "service_worker": "background.js"
   },
